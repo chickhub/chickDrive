@@ -18,4 +18,5 @@
 
     <string name="dialog_title">LogIn</string>
     <string name="dialog_message">Your login Information is incorrect</string>
+    <string name="title_activity_chat">Chat</string>
 </resources>
