@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RatesSearchFragment">
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/md_black_1000"
+                android:gravity="center|left"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center|left"
+                android:fontFamily="@font/nunito_regular"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gardient_spinner"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/md_black_1000"
+                android:gravity="center|left"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/gardient_spinner">
+
+            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_button_corner_color"
+            android:text="APPLY FILTERS"
+            android:textAllCaps="true"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/md_white_1000"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.chickdrive.chicksdrive">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".uiActivities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".uiActivities.LoginActivity"
+            android:label="Loh in"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".uiActivities.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".uiActivities.SelectionSignupActivity"
+            android:label="Selection Sign up"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".uiActivities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".uiActivities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".uiActivities.SignupActivity"
+            android:label="Sign up"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".uiActivities.SelectionSignupActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".uiActivities.SelectionSignupActivity" />
+        </activity>
+
+        <activity
+            android:name=".uiActivities.ForgetPassword"
+            android:label="Forgot Password"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".uiActivities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.chickdrive.chicksdrive.uiActivities.LoginActivity" />
+        </activity>
+    </application>
+
+</manifest>

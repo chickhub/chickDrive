@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+        android:id="@+id/google_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/img_home_ad"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_dummy_home"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUPER HOT"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/nunito_regular"
+        android:textColor="@color/md_white_1000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lahore"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_margin="20dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@color/md_white_1000"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:background="@drawable/bg_maintext_corner_color"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:text="200 BROILER CHICKENS"
+        android:gravity="center"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginTop="195dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tv_quantity"
+        android:id="@+id/my_recycler_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

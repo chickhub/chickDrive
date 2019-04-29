@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RatesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/tv_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="23 April,2019"
+                android:drawablePadding="2dp"
+                android:gravity="center|left"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/nunito_extrabold"/>
+            <TextView
+                android:id="@+id/tv_City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lahore"
+                android:gravity="center|left"
+                android:textSize="22dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/nunito_bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Broiler"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="2dp"
+            android:gravity="center|left"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:textColor="#DE4C3C"
+            android:fontFamily="@font/nunito_extrabold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Rate: "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wholesale Alive:  "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Retail Alive:  "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meat:"
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_BFarmRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/tv_BWholeSaleAlive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/BRetailAlive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/tv_BMeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#DE4C3C"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAYER (EGGS)"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="2dp"
+            android:gravity="center|left"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:textColor="#DE4C3C"
+            android:fontFamily="@font/nunito_extrabold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Egg Rate: "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cage:   "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Floor:   "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Starter:"
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gram Rates:"
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_semibold"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_LEggRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/tv_LCage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/tv_LFloor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/tv_LStarter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/tv_LGramRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="RS. 18/Kg "
+                    android:drawablePadding="2dp"
+                    android:gravity="center|left"
+                    android:textSize="22sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/nunito_bold"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/md_black_1000"
+        android:text="AD"
+        android:textColor="@color/md_white_1000"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunito_extrabold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
